@@ -18,11 +18,11 @@ export function fetchImages(query) {
   showSpinner();
   return fetch(
     `https://pixabay.com/api/?key=${API_KEY}&q=${query}&image_type=photo&orientation=horizontal&safesearch=true`
-  ).then(res => {
-    if (!res.ok) {
+  ).then(response => {
+    if (!response.ok) {
       throw new Error('Failed to fetch images');
     }
-    return res.json();
+    return response.json();
   });
 }
 

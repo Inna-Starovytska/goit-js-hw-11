@@ -35,6 +35,7 @@ button {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 li {
@@ -46,7 +47,6 @@ li {
 .search-form {
   width: 400px;
   margin: 36px auto;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,17 +89,17 @@ li {
   padding: 8px 16px;
   width: 91px;
   height: 40px;
-  background: rgb(205, 205, 205);
+  background: #4e75ff;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: black;
+  color: white;
   cursor: pointer;
 }
 
 .btn:hover {
-  background: grey;
+  background: #6c8cff;
 }
 
 .card-container {
@@ -153,37 +153,19 @@ li {
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
-
 .loader {
   width: 48px;
   height: 48px;
   margin: 0 auto;
-  border: 3px dotted #fff;
-  border-style: solid solid dotted dotted;
+  border: 5px solid;
+  border-color: #ff3d00 transparent;
   border-radius: 50%;
   display: none;
   position: relative;
   box-sizing: border-box;
-  animation: rotation 2s linear infinite;
+  animation: rotation 1s linear infinite;
 }
-.loader::after {
-  content: '';
-  box-sizing: border-box;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  border: 3px dotted grey;
-  border-style: solid solid dotted;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  animation: rotationBack 1s linear infinite;
-  transform-origin: center center;
-}
-/* 
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
@@ -192,11 +174,3 @@ li {
     transform: rotate(360deg);
   }
 }
-@keyframes rotationBack {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-} */

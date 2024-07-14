@@ -26,7 +26,6 @@ function handleSearch(event) {
       .then(data => {
         if (data.hits.length === 0) {
           iziToast.warning({
-            title: 'No Results',
             message:
               'Sorry, there are no images matching your search query. Please try again!',
             position: 'topRight',

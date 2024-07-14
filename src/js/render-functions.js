@@ -35,7 +35,6 @@ export function renderImgCard(dataArr) {
   const lightbox = new SimpleLightbox('.card-container a', {
     captionsData: 'alt',
     captionPosition: 'bottom',
-    captionDelay: 250,
   });
 
   lightbox.refresh();
